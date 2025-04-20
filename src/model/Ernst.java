@@ -5,3 +5,4 @@ public enum Ernst {
     Matig,
     Ernstig
 }
+//
