@@ -1,8 +1,8 @@
 package model;
 
-public class ConcreteBehandeling extends Behandeling {
+public class Operatie extends SoortBehandeling {
 
-    public ConcreteBehandeling(String behandelingId, String naam, String beschrijving, String type) {
+    public Operatie (String behandelingId, String naam, String beschrijving, String type) {
         super(behandelingId, naam, beschrijving, type);
     }
 

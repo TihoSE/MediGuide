@@ -11,7 +11,7 @@ public class Ziekte {
     private String visueelHulpmiddel;
 
     private List<Symptoom> symptomen = new ArrayList<>();
-    private List<Behandeling> behandelingen = new ArrayList<>();
+    private List<SoortBehandeling> behandelingen = new ArrayList<>();
     private List<Preventietip> preventietips = new ArrayList<>();
 
     public Ziekte(String ziekteId, String naam, String beschrijving, Ernst ernst, String visueelHulpmiddel) {
@@ -26,7 +26,7 @@ public class Ziekte {
         symptomen.add(s);
     }
 
-    public void voegBehandelingToe(Behandeling b) {
+    public void voegBehandelingToe(SoortBehandeling b) {
         behandelingen.add(b);
     }
 
@@ -42,11 +42,16 @@ public class Ziekte {
         return symptomen;
     }
 
-    public List<Behandeling> getBehandelingen() {
+    public List<SoortBehandeling> getBehandelingen() {
         return behandelingen;
     }
 
     public String getNaam() {
         return naam;
     }
+
+    public List<Preventietip> getPreventietips() {
+        return preventietips;
+    }
+
 }
